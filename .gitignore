@@ -1,0 +1,54 @@
+.DS_Store
+node_modules
+dist
+dist-ssr
+
+/tests/e2e/videos/
+/tests/e2e/screenshots/
+/instrumented
+/coverage
+.nyc_output
+
+# local env files
+.env
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.local
+LOCAL_NOTES.md
+
+
+# node项目要
+logs/
+npm-debug.log
+node_modules/
+coverage/
+.idea/
+run/
+*.swp
+*.lock
+*.js
+!.autod.conf.js
+node/self.json
+
+app/**/*.js
+test/**/*.js
+config/**/*.js
+app/**/*.map
+test/**/*.map
+config/**/*.map

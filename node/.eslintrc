@@ -1,0 +1,7 @@
+{
+  "extends": "eslint-config-egg/typescript",
+  "rules": {
+    "@typescript-eslint/semi": 0,
+    "comma-dangle": 0
+  }
+}
