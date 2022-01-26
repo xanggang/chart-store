@@ -16,8 +16,6 @@ export default (appInfo: EggAppInfo) => {
     sourceUrl: `https://github.com/eggjs/examples/tree/master/${appInfo.name}`,
   };
 
-  config.dingConfig = self.dingConfig
-
   config.security = {
     csrf: {
       ignoreJSON: true, // 默认为 false，当设置为 true 时，将会放过所有 content-type 为 `application/json` 的请求
@@ -33,11 +31,10 @@ export default (appInfo: EggAppInfo) => {
     dialect: 'mysql',
     host: self.mysql.address,
     password: self.mysql.password,
-    port: 9006,
-    database: 'dingding',
+    port: self.mysql.port,
+    database: 'charts',
     timezone: '+08:00',
     dialectOptions: {
-      camelCase: true,
       dateStrings: true,
       typeCast: true,
     },

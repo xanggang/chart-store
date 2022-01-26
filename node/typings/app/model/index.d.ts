@@ -2,12 +2,12 @@
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
-import ExportMessageLog from '../../../app/model/messageLog';
-import ExportUser from '../../../app/model/user';
+import ExportDetail from '../../../app/model/detail';
+import ExportList from '../../../app/model/list';
 
 declare module 'egg' {
   interface IModel {
-    MessageLog: ReturnType<typeof ExportMessageLog>;
-    User: ReturnType<typeof ExportUser>;
+    Detail: ReturnType<typeof ExportDetail>;
+    List: ReturnType<typeof ExportList>;
   }
 }

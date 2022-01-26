@@ -12,7 +12,7 @@
     "stop": "egg-scripts stop --title=egg-server-dingFamily",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
-    "test-local": "egg-bin test test/app/controller/dingRobot.test.ts",
+    "test-local": "egg-bin test test/app/service/list.test.ts",
     "test": "npm run lint -- --fix && npm run test-local",
     "cov": "egg-bin cov",
     "tsc": "ets && tsc -p tsconfig.json",
@@ -22,12 +22,15 @@
     "clean": "ets clean"
   },
   "dependencies": {
+    "async": "^3.2.3",
+    "axios": "^0.25.0",
     "egg": "^2.6.1",
     "egg-scripts": "^2.6.0",
     "egg-sequelize": "^6.0.0",
     "egg-validate": "^2.0.2",
     "memory-cache": "^0.2.0",
     "mysql2": "^2.3.3",
+    "qiniu": "^7.4.0",
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
