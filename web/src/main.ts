@@ -6,6 +6,8 @@ import { createHead } from '@vueuse/head'
 import './assets/index.postcss'
 import 'ant-design-vue/dist/antd.css';
 import 'tailwindcss/tailwind.css'
+import * as echarts from 'echarts'
+(window as any).echarts = echarts
 
 const head = createHead()
 const app = createApp(App)

@@ -2,6 +2,7 @@
   <div class="h-full w-full" :class="{ error: isErrorJson }">
     <a-button @click="foldJson">格式化代码</a-button>
     <a-button @click="handleGetData">getJsonEditorValue</a-button>
+    <a-button @click="setJson">setJson</a-button>
     <textarea class="h-full w-full" ref="domRef"></textarea>
   </div>
 </template>
@@ -18,6 +19,7 @@ export default defineComponent({
     const {
       isErrorJson,
       foldJson,
+      setJson,
       getJsonEditorValue,
       jsonOption
     } = useJsonEditor(domRef)
@@ -32,6 +34,7 @@ export default defineComponent({
       domRef,
       foldJson,
       handleGetData,
+      setJson,
       isErrorJson
     }
   }

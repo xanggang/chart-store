@@ -3,7 +3,7 @@
     <div class="w-[40%] mr-[20px] bg-red-100 overflow-hidden">
       <Codemirror @set-data="handleSetData"></Codemirror>
     </div>
-    <div class="w-[60%] bg-red-300">
+    <div class="w-[60%] h-[300px] bg-red-300">
       <Chart :options="options"></Chart>
     </div>
   </div>
@@ -22,7 +22,9 @@ export default defineComponent({
     const opt = ref({})
 
     function handleSetData (e) {
+      console.log(e);
       const d = `function run () { const ${e}  return option} run()`
+      console.log(d);
       const s = eval(d)
       opt.value = s
     }
